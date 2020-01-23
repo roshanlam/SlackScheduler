@@ -23,7 +23,6 @@ app.use(bodyParser.urlencoded({extended: false}));
 app.use(bodyParser.json());
 // var app = express();
 
-
 var {RtmClient, WebClient, CLIENT_EVENTS, RTM_EVENTS} = require('@slack/client');
 var CLIENT_ID = process.env.CLIENT_ID;
 var CLIENT_SECRET = process.env.CLIENT_SECRET;
