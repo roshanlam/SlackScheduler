@@ -1,6 +1,6 @@
 # SlackScheduler
 
-The Slack Scheduler bot is a langauge aware intelligent slack bot for scheduling reminders and meetings with other slack users in google calendar. 
+The Slack Scheduler bot is a language aware intelligent slack bot for scheduling reminders and meetings with other slack users in google calendar. 
 
 The Slack Scheduler bot is built using many asynchronous API's, making it very difficult to maintain state across multiple users. The three core APIs used are Slack RTM, API.AI, and Google Calendar API. When the slack bot is sent a message, it is immedaitely sent to API.AI where multiple intents are already set up to parse the input and decide how to respond based off of the users input. For example, if you were to input "Schedule a meeting with *a person* at *time* on *date or today/tomorrow/etc* to discuss *a meeting topic* for *one hour*". If any of the italic fields are missing, the response will ask for the user for the specific field. Duration is not required, but will default to 30 minutes if not included.
   
