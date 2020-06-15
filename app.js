@@ -85,7 +85,7 @@ app.get('/connect/callback', function(req, res) {
                         pendingInvites: []
                     });
                     newUser.save()
-                    .then( () => res.status(200).send("Your account was successfuly authenticated"))
+                    .then( () => res.status(200).send("Your account was successfully authenticated"))
                     .catch((err) => {
                         console.log('error in newuser save of connectcallback');
                         res.status(400).json({error:err});
